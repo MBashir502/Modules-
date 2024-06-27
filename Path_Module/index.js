@@ -9,4 +9,7 @@ const path = require("path");
 // console.log(path.join('/search',"home","about/contact","info","view"));
 // console.log(path.join('/search',"home","about/contact","info","view",".."));
 // console.log(path.join(__dirname,"home","about/contact","info","view",".."));
-console.log(path.normalize("f:\\mbt\\ali\\\\temp"));
+// console.log(path.normalize("f:\\mbt\\ali\\\\temp"));
+console.log(path.parse(__dirname).root);
+console.log(path.parse(__dirname).base);
+console.log(path.parse(__dirname).name);
